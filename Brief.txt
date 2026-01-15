@@ -1,0 +1,32 @@
+Date: 1st of December - 19th of March
+Theme: Forests
+Main project: Build functional embedded system that collects environmental data and simulates a real-world process related to the theme of forests. Also develop computer-based model that uses data to test "what-if" scenarios. Make feedback system to adapt as well.
+
+
+Basic requirements:
+
+1) Embedded system design:
+	i) Build functional system that uses (at least) one digital and one analogue input
+	ii) System must generate (at least) one output(analogue or digital)
+	iii) System can be started or calibrated manually BUT should operate automatically
+
+2) Data collection:
+	i) Use system to collect and store data related to theme. (Data will be used in advanced requirements)
+
+3)Process simulation:
+	i) Configure system to simulate real-world process related to theme
+	ii) Run test to see how system responds using data
+
+
+Advanced requirements:
+
+1) Disaster risk modelling:
+	i) Using Python, develop model of chosen disaster risk related to FORESTS
+	ii) Model must use some data collect from system (and can be combined with data from other sources)
+
+2) What-if simulations:
+	i) Explore how you risk model behaves under different conditions. Each scenario should change one or more key variables and observe resulting change.
+
+3) Adaptive system:
+	i) Extend system to include feedback mechanism (algorithm that adapts over time) that enables it to automatically adapt to changing conditions.
+
