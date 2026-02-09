@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#brief">Meeting the Brief</a></li>
+                <li><a href="#investigation">Investigation</a></li>
+                <li><a href="#plan">Plan & Design</a></li>
+                <li><a href="#create">Create</a></li>
+                <li><a href="#evaluation">Evaluation</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>SURTR (Sensor Unit for Real-Time Thermal Risk</h1>
+            <p>Leaving Certificate Computer Science Coursework 2026</p>
+            <p><strong>Exam Number:</strong> [INSERT NUMBER]</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="brief">
+            <h2>1. Meeting the Brief</h2>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="caption">Figure 1: Video demonstration of [INSERT PROJECT HERE] in action.</p>
+            </div>
+            
+            <div class="content-block">
+                <h3>System Overview</h3>
+                <h4>Basic requirements:</h4>
+                <p><strong>Basic Requirement 1 (Embedded System):</strong> The items used to assemble the micro:bit are the micro:bit itself, a thermal sensor and an extension board along with some basic wiring.</p>
+                <p><strong>Basic Requirement 2 (Data):</strong> The data was collected via a csv file (appropiatetly named) which recorded the sensors of the micro:bit on a loop that ran every second.</p>
+                <p><strong>Basic Requirement 3 (Simulation):</strong> I implemented a scenario where a fire would occur. This can be done by pressing a specific button on the actual micro:bit.</p>
+                <p><strong>Advanced Requirements:</strong></p>
+                <p><strong>Advanced requirement 1 (Disaster risk modelling):</strong> I made a python program that takes in data from the micro:bit and a csv file i made from met eiraan. The program spits out the fire score predicted for the data given.</p>
+                <p><strong>Advanced requirement 2</strong></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="investigation">
+            <h2>2. Investigation</h2>
+            <div class="content-block">
+                <h3>Research</h3>
+                <p> [INSERT YOUR RESEARCH ON YOUR THEME HERE]</p>
+                
+                <h3>Existing Solutions</h3>
+                <p> [INSERT 3 EXISTING SOLOUTIONS HERE]</p>
+                
+                <h3>Design Decisions</h3>
+                <p>[INSERT 3 DESIGN DECISIONS HERE AND WHY YOU CHOSE THEM]</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="plan">
+            <h2>3. Plan and Design</h2>
+            
+            <div class="two-column">
+                <div>
+                    <h3>Design Objectives</h3>
+                    <ul>
+                        <li>[OBJECTIVE 1 ]</li>
+                        <li>[OBJECTIVE 2 ]</li>
+                        <li>[OBJECTIVE 3 ]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li><strong>Hardware:</strong> [INSERT HARDWARE USED HERE]</li>
+                        <li><strong>Software:</strong> [INSERT SOFTWARE USED HERE]</li>
+                        <li><strong>Libraries:</strong> [INSERT LIBRARIES HERE]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>System Architecture</h3>
+            <div class="image-placeholder">
+                <p>[INSERT FLOWCHART 1 & 2 HERE (FLOWCHART FOR PYTHON / FLOWCHART FOR MAKECODE)]</p>
+                <p>[INSERT SYSTEM ARCHITECTURE DIAGRAM HERE]</p>
+                <img src="images/flowchart.png" alt="System Flowchart" style="max-width: 80%;">
+                <p class="caption">Figure 2: System Architecture Flowchart</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="create">
+            <h2>4. Create</h2>
+            
+            <h3>Key Milestones [FINISH YOUR MILESSTONES BELOW USE THE SAMPLES TO GUIDE YOU]</h3>
+            <ul>
+                <li><strong>Week 1-3:</strong> Established Serial communication between Micro:bit and Python.</li>
+                <li><strong>Week 4-6:</strong> Developed the "Wildfire Risk Index" algorithm.</li>
+                <li><strong>Week 7-9:</strong> Implemented the "What-If" simulation buttons.</li>
+            </ul>
+
+            <h3>The Model / Algorithm</h3>
+            <p>The core algorithm calculates risk based on weighted variables: [INSERT YOUR OWN ALGORITHM BELOW]</p>
+            <pre><code>
+def calculate_risk(temp, light):
+    # Model for Wildfire Risk Index (WRI)
+    # Higher light implies less canopy -> drier fuel
+    risk_score = (temp * 1.5) + (light / 10)
+    return risk_score
+            </code></pre>
+
+            <h3>Problem Solvinng [INSERT 3 PROBLEMS YOU ENCOUNTERED AND 3 SOLUTIONS SCREENSHOTS HELP!]</h3>
+            <p><strong>Problem:</strong> The Micro:bit temperature sensor read 3°C higher than ambient air due to CPU heat.</p>
+            <p><strong>Solution:</strong> I implemented a calibration function. On startup, the user inputs the known room temp, and the code calculates a 'delta' offset.</p>
+        </section>
+
+        <hr>
+
+        <section id="evaluation">
+            <h2>5. Evaluation [INSERT TWO THINGS IT DOES WELL]</h2>
+            <p>The final artefact successfully models forest fire risks. The adaptive feedback loop is immediate and clearly visible via the LED matrix...</p>
+            
+            <h3>Future Improvements [INSERT TWO THINGS TO IMPROVE AND HOW YOU WOULD ACHIEVE IT]</h3>
+            <ul>
+                <li><strong>Hardware:</strong> Replace internal temp sensor with an external DHT11 for better accuracy.</li>
+                <li><strong>Connectivity:</strong> Use Micro:bit Radio to allow wireless placement of sensors in a real tree.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="references">
+            <h2>6. References [REFERENCES GO HERE]</h2>
+            <ul class="ref-list">
+                <li>[1] Coillte, "Forest Strategy 2023," [Online]. Available: www.coillte.ie</li>
+                <li>[2] Micro:bit Foundation, "Python Guide," [Online].</li>
+                <li>[3] OpenAI, "ChatGPT," (Used for debugging Serial code errors).</li>
+            </ul>
+        </section>
+
+        <footer>
+            <h3>Summary Word Count [FILL IN YOUR WORD COUNT BELOW]</h3>
+            <table class="word-count-table">
+                <tr><th>Section</th><th>Word Count</th></tr>
+                <tr><td>Meeting the brief</td><td>350</td></tr>
+                <tr><td>Investigation</td><td>380</td></tr>
+                <tr><td>Plan and design</td><td>550</td></tr>
+                <tr><td>Create</td><td>750</td></tr>
+                <tr><td>Evaluation</td><td>300</td></tr>
+                <tr class="total-row"><td><strong>Total</strong></td><td><strong>2330</strong></td></tr>
+            </table>
+        </footer>
+
+    </main>
+</body>
+</html>
